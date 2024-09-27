@@ -1,0 +1,84 @@
+/* Form Container */
+.container {
+    background-color: #fcf7f7; /* Cream color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 800px; /* Width of the form container */
+    margin: 2rem auto; /* Center the container */
+    text-align: left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+a{
+    text-align: center;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #388e3c; /* Dark green */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2c6b2f; /* Slightly darker green for hover effect */
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Return Button */
+.return-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #388e3c; /* Dark green */
+    border: 1px solid #388e3c; /* Dark green border */
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.return-btn:hover {
+    background-color: #388e3c;
+    color: #fff;
+}
+
+/* Responsive Form Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    input[type="submit"] {
+        padding: 0.75rem;
+        font-size: 0.875rem;
+    }
+}

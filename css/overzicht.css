@@ -1,0 +1,72 @@
+/* Data Overview Table Styling */
+.container {
+    width: 60%;
+    padding: 4vh;
+    background-color: #fff;
+    border-radius: 0.8vh;
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
+    margin-left: 15vh;
+    float: left;
+    animation: slide-left 1s linear;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2vh;
+    animation: none; /* Disable animation for now */
+}
+
+table, th, td {
+    border: 1vh solid #f3efef;
+}
+
+th, td {
+    padding: 1vh;
+    text-align: left;
+}
+
+th {
+    background-color: white;
+    color: black;
+    font-size: 2vh;
+}
+
+tr {
+    opacity: 1; /* Set opacity of rows to 1 */
+    animation: none; /* Disable row animations */
+}
+
+
+
+tr:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+tr:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Mobile-Specific Styles for Data Overview */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    table {
+        width: 100%;
+        font-size: 1.4vh;
+    }
+}
